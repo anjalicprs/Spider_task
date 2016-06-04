@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  var array =[0,1];
+  var array2=[0,1];
+  var i=0;
+     array[0]=0;
+     function fun(){
+     	if(i%2==0)
+     	{
+     		if(array[i]!=array[i-1])
+     		{
+               array2[i].innerHTML=" ";
+               array2[i-1].innerHTML=" ";
+     		}
+     	}
+     }
+
+    function fun1(){
+    	i++;
+    	array2[i]=(document.getElementById("a1"));
+    	array[i]=1;
+    	document.getElementById("a1").innerHTML=array[i];
+    	var my = setTimeout(fun,5000);
+    	fun();
+    }
+    function fun2(){
+    	i++;
+    	array[i]=2;
+    	array2[i]=(document.getElementById("a2"));
+    	document.getElementById("a2").innerHTML=array[i];
+    	fun();
+    }
+     function fun3(){
+    	i++;
+    	array2[i]=(document.getElementById("a3"));
+    	array[i]=3;
+    	 document.getElementById("a3").innerHTML=array[i];
+    	fun();
+    }
+     function fun4(){
+    	i++;
+    	array[i]=1;
+    	array2[i]=(document.getElementById("a4"));
+    	document.getElementById("a4").innerHTML=array[i];
+    	fun();
+    }
+     function fun5(){
+    	i++;
+    	array[i]=4;
+    	array2[i]=(document.getElementById("b1"));
+    	document.getElementById("b1").innerHTML=array[i];
+    	fun();
+    }
+     function fun6(){
+    	i++;
+    	array[i]=5;
+    	array2[i]=(document.getElementById("b2"));
+    	document.getElementById("b2").innerHTML=array[i];
+    	fun();
+    }
+     function fun7(){
+    	i++;
+    	array[i]=3;
+    	array2[i]=(document.getElementById("b3"));
+    	document.getElementById("b3").innerHTML=array[i];
+    	fun();
+    }
+     function fun8(){
+    	i++;
+    	array[i]=6;
+    	array2[i]=(document.getElementById("b4"));
+    	document.getElementById("b4").innerHTML=array[i];
+    	fun();
+    }
+     function fun9(){
+    	i++;
+    	array[i]=7;
+    	array2[i]=(document.getElementById("c1"));
+    	document.getElementById("c1").innerHTML=array[i];
+    	fun();
+    }
+    function fun10(){
+    	i++;
+    	array[i]=6;
+    	array2[i]=(document.getElementById("c2"));
+    	document.getElementById("c2").innerHTML=array[i];
+    	fun();
+    }
+    function fun11(){
+    	i++;
+    	array[i]=2;
+    	array2[i]=(document.getElementById("c3"));
+    	document.getElementById("c3").innerHTML=array[i];
+    	fun();
+    }
+    function fun12(){
+    	i++;
+    	array[i]=8;
+    	array2[i]=(document.getElementById("c4"));
+    	document.getElementById("c4").innerHTML=array[i];
+    	fun();
+    }
+    function fun13(){
+    	i++;
+    	array[i]=8;
+    	array2[i]=(document.getElementById("d1"));
+    	document.getElementById("d1").innerHTML=array[i];
+    	fun();
+    }
+    function fun14(){
+    	i++;
+    	array[i]=7;
+    	array2[i]=(document.getElementById("d2"));
+    	document.getElementById("d2").innerHTML=array[i];
+    	fun();
+    }
+    function fun15(){
+    	i++;
+    	array[i]=4;
+    	array2[i]=(document.getElementById("d3"));
+    	document.getElementById("d3").innerHTML=array[i];
+    	fun();
+    }
+    function fun16(){
+    	i++;
+    	array[i]=5;
+    	array2[i]=(document.getElementById("d4"));
+    	document.getElementById("d4").innerHTML=array[i];
+    	fun();
+    }
+  </script>
+</head>
+<body background="color.jpg">
+<div class="container-fluid">
+<div id="bar"><h1>Check Your Memory </h1><div>
+<div class="table-responsive">
+<table id="a" class="b">
+<tr id="row1">
+<td  onclick="fun1();" id="a1"></td>
+<td  onclick="fun2();"  id="a2"></td>
+<td  onclick="fun3();"  id="a3"></td>
+<td  onclick="fun4();"  id="a4"></td>
+</tr>
+<tr id="row2">
+<td  onclick="fun5();"  id="b1"></td>
+<td  onclick="fun6();"  id="b2"></td>
+<td  onclick="fun7();"  id="b3"></td>
+<td  onclick="fun8();"  id="b4"></td>
+</tr>
+<tr id="row3">
+<td onclick="fun9();"  id="c1"></td>
+<td  onclick="fun10();"  id="c2"></td>
+<td  onclick="fun11();"  id="c3"></td>
+<td  onclick="fun12();"  id="c4"></td>
+</tr>
+<tr id="row4">
+<td  onclick="fun13();"  id="d1"></td>
+<td  onclick="fun14();"  id="d2"></td>
+<td  onclick="fun15();"  id="d3"></td>
+<td  onclick="fun16();"  id="d4"></td>
+</tr>
+</table>
+</div>
+</div>
+<style>
+#a
+{
+	height: 500px;
+	width: 500px;
+	background-color: #FF8C00;
+	color: yellow;
+    text-align:center;
+    margin-left:200px;
+    margin-top:100px;
+    font-size:36;
+   
+}
+td:hover{background-color:#FF1493;}
+table,td{
+	 border-spacing:10px 10px;
+	 border-collapse: separate;
+	 padding:5px solid white;
+	 border: 10px solid white;
+}
+#bar{
+	font-style:italic;
+	color:#9ACD32;
+}
+</style>
+</body>
+</html>
