@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      $('body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+ <div id="header" class="col-sm-12"> 
+  <h1> My GitHub Page </h1> 
+  <h1> Anjali Gupta </h1>
+  <p id="one">My <span>LIFE</span> My<span> CHOICE</span></p>
+  <p>Personal uploaded files which can be edited directly </p>
+ <img id="myImg" src="me.jpg" alt="MYSELF During Opal Day" width="100px" height="150px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+ </div>
+ </div>
+ <div class="w3-content" id="s">
+
+<img class="mySlides" id="r" src="memory1.jpg">
+<img class="mySlides" id="r" src="memory2.jpg">
+<img class="mySlides" id="r" src="memory3.jpg">
+<img class="mySlides" id="r" src="memory4.jpg">
+<img class="mySlides" id="r" src="memory5.jpg">
+<img class="mySlides" id="r" src="memory6.jpg">
+<img class="mySlides" id="r" src="memory7.jpg">
+<img class="mySlides" id="r" src="memory8.jpg">
+<img class="mySlides" id="r" src="memory9.jpg">
+<img class="mySlides" id="r" src="memory10.jpg">
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</div>
+ <div id="Mylife" class="row">
+ <div class="col-sm-3" ><a href="#section2"><div id="stack1"><h1>My Family </h1></div></a></div>
+ <div class="col-sm-3" ><a href="#section3"><div id="stack1"><h1>My Friends </h1></div></a></div>
+ <div class="col-sm-3"  ><a href="#section4"><div id="stack1"><h1>Fantastic Five </h1></div></a></div>
+ <div class="col-sm-3"><a href="#section5"><div  id="stack1"><h1>My Hobbies </h1></div></a></div>
+ </div>
+<div id="section2">
+<h1 id="q"> MY FAMILY </h1>
+<h4 id="j"><p> Don't you think that without a complete family we can not survive in this world.</p>
+<p>Family is a part of anyone's life. Did you ever think why God provided us a family. Take a minute</p>
+<p>and think over it.If you think you will find that only family makes us feel happy.</p>
+ <p>Have a look on my family which is my strength and which gives me power to do anything</p>
+</h4>
+<table class="table" id="w">
+<tr>
+<td id="v"><img src="mummy.jpg" id="f" title="Mummy"></td>
+<td id="v"><img src="papa.jpg" id="f" title="Papa"></td>
+<td id="v"><img src="ankit.jpg" id="f" title="My Brother"></td>
+</tr>
+<tr>
+<td id="v"><img src="chotimummy.jpg" id="f" title="Choti Mummy"></td>
+<td id="v"><img src="chotepapa.jpg" id="f" title="Chote Papa"></td>
+<td id="v"><img src="savya.jpg" id="f" title="Savya"></td>
+</tr>
+<tr>
+<td id="v"><img src="dadi.jpg" id="f" title="Dadi"></td>
+<td id="v"><img src="mithi.jpg" id="f" title="My Sister"></td>
+<td id="v"><img src="akshitfam.jpg" id="f" title="Bade Papa Ki Family"></td>
+</tr>
+</table>
+</div>
+<div id="section3">
+<h1 id="q">MY FRIENDS </h1>
+<h4 id="j"><p>The second place in our life goes to our friends. They are someone who always makes us happy</p>
+<p>but never ask for any charge in return.  Friendship means closeness without any selfish motive.</p>
+<p>Growing true friendship is very hard and it takes time but once the friendship is broken it can never be patched up.</p>
+<p>I am so lucky to have so many good friends. Have a look on them but don't get jealous   ;) ;)</p>
+</h4>
+<table class="table" id="w">
+<tr>
+<td id="v"><img src="ritto.jpg" id="f" title="Ritabina"></td>
+<td id="v"><img src="tania.jpg" id="f" title="Tania"></td>
+<td id="v"><img src="lavanya.jpg" id="f" title="Lavanya"></td>
+</tr>
+<tr>
+<td id="v"><img src="kavya.jpg" id="f" title="Kavya"></td>
+<td id="v"><img src="greeshma.jpg" id="f" title="Greeshma"></td>
+<td id="v"><img src="sree.jpg" id="f" title="Sree Lakshmi"></td>
+</tr>
+<tr>
+<td id="v"><img src="naseem.jpg" id="f" title="Naseem"></td>
+<td id="v"><img src="suddu.jpg" id="f" title="Sudeshna"></td>
+<td id="v"><img src="fantastic9.jpg" id="f" title="Priyanka And Other"></td>
+</tr>
+</table>
+</div>
+<div id="section4">
+<h1 id="q">Fantastic Five </h1>
+<h4 id="j"><p>The most important thing that I got after coming to NITT is the tag of fantastic five.</p>
+<p>I don't know how easily we five became that close. But I am really lucky to have these four fantastic friends </p>
+<p>who are with me whenever I need them, whenever I want their help they are always there with me to help me and to share</p>
+<p> my joy, grief, and sadness. Look at our precious moments that I can not forget in my whole life.</p>
+</h4>
+<table class="table" id="w">
+<tr>
+<td id="v"><img src="fantastic1.jpg" id="f" title="Relaxing after exams"></td>
+<td id="v"><img src="fantastic2.jpg" id="f" title="We during Pragyan"></td>
+<td id="v"><img src="fantastic3.jpg" id="f" title="We during Nittfest"></td>
+</tr>
+<tr>
+<td id="v"><img src="fantastic4.jpg" id="f" title="We in Roshans"></td>
+<td id="v"><img src="fantastic5.jpg" id="f" title="We in Vasantham"></td>
+<td id="v"><img src="fantastic6.jpg" id="f" title="We after exams"></td>
+</tr>
+<tr>
+<td id="v"><img src="fantastic7.jpg" id="f" title="We in Open air"></td>
+<td id="v"><img src="fantastic8.jpg" id="f" title="We on Tania's birthday"></td>
+<td id="v"><img src="fantastic9.jpg" id="f" title="We during Festember"></td>
+</tr>
+</table>
+</div>
+<div id="section5">
+<h1 id="q">MY HOBBIES</h1>
+<h4 id="j"><p>I think I have so many hobbies but the bad thing is that I am not perfect in anything.</p>
+<p>I really regret for this. But I like drawings and writings poem but the poem that I write are mostly in hindi.</p>
+<p> I like reading novels and playing badminton. Actually my favourite game is cricket but I never played it after my 10th exams</p>
+<p>Have a look on my hobbies. Don't criticize my drawings I know some are worst but after all I have drawn it ;( </p>
+</h4>
+<table class="table" id="w">
+<tr>
+<td id="v"><img src="hobby1.jpg" id="f" title="A Girl With A Smile"></td>
+<td id="v"><img src="hobby2.jpg" id="f" title="A Serious Girl"></td>
+<td id="v"><img src="hobby3.jpg" id="f" title="Priyanka's Portrait"></td>
+</tr>
+<tr>
+<td id="v"><img src="hobby4.jpg" id="f" title="End Of Journey"></td>
+<td id="v"><img src="hobby5.jpg" id="f" title="Lord Ganesha"></td>
+<td id="v"><img src="hobby6.jpg" id="f" title="Bani Thani"></td>
+</tr>
+<tr>
+<td id="v"><img src="hobby7.jpg" id="f" title="My First Poem"></td>
+<td id="v"><img src="hobby8.jpg" id="f" title="My Second Poem"></td>
+<td id="v"><h2 id="q">Will write a poem</h2></td>
+</tr>
+</table>
+</div>
+ <div id="stage">
+ 	<h1 style="color:#73AD21;">My Way Of Seeing The Whole World__________</h1>
+ 	<h1 id="head">Life As a Stage </h1> 
+ 	<h3><a href="stage.html"><div id="x"><p>All the world is a stage,</p>
+<p>And all the men and women merely players;</p>
+<p>They have their exits and their entrances,</p>
+<p>And one man in his time plays many parts,</p>
+<p>His acts being seven ages.</p></div></a>
+</h3>
+ <h1 id="head">The First Stage</h1>
+ <h3><div id="x"><p>At first the infant,</p>
+<p>Mewling and puking in the nurse is arms;</p></div>
+</h3>
+<p></p>
+<h1 id="head">The Second Stage</h1>
+<h3><div id="x">
+<p>And then the whining schoolboy, with his satchel</p>
+<p>And shining morning face, creeping like snail</p>
+<p>Unwillingly to school.</p></div></h3>
+<h1 id="head">The Third Stage </h1> 
+<h3><div id="x"><p>And then the lover,</p>
+<p>Sighing like furnace, with a woeful ballad</p>
+<p>Made to his mistress eyebrow.</p></div></h3>
+<h1 id="head">The Fourth Stage </h1>
+<h3><div id="x"><p> Then a soldier,</p>
+<p>Full of strange oaths, and bearded like the pard,</p>
+<p>Jealous in honor, sudden and quick in quarrel,</p>
+<p>Seeking the bubble reputation</p>
+<p>Even in the cannon is mouth.</p></div></h3>
+<h1 id="head">The Fifth Stage</h1>
+<h3><div id="x"><p> And then the justice,</p>
+<p>In fair round belly with good capon lined,</p>
+<p>With eyes severe and beard of formal cut,</p>
+<p>Full of wise saws and modern instances;</p>
+<p>And so he plays his part.</p></div></h3>
+<h1 id="head">The Sixth Stage</h1><h3><div id="x">
+<p>The sixth age shifts</p>
+<p>Into the lean and slippered pantaloon,</p>
+<p>With spectacles on nose and pouch on side;</p>
+<p>His youthful hose, well saved, a world too wide</p>
+<p>For his shrunk shank; and his big manly voice,
+Turning again toward childish treble, pipes</p>
+<p>And whistles in his sound.</p></div></h3>
+<h1 id="head">The Last Stage</h1>
+<h3>
+<div id="x">
+<p>Last scene of all,</p>
+<p>That ends this strange eventful history,</p>
+<p>Is second childishness and mere oblivion,</p>
+<p>Sans teeth, sans eyes, sans taste, sans everything.</p></div></h3>
+<h1 id="head">Want To Make Your Life Perfect </h1>
+<h2 id="h">Then Follow My Rules</h2>
+<ul>
+<li><h3 id="j">Always Try Your best And Don't Care of Results</h3></li>
+<li><h3 id="j">Don't Worry Be Happy</h3></li>
+<li><h3 id="j">If you care for everyone they will certainly care for you</h3></li>
+<li><h3 id="j">Have faith and confidence on yourself</h3></li>
+<li><h3 id="j">Believe in God</h3></li>
+</ul>
+ </div>
+<div id="ss"><a href="spider.html"><h2>Want to have some fun then click on it</h2></a></div>
+
+ </div>
+<style>
+#ss{
+color:#ffffff;
+background-color:#008080;
+text-align:center;
+border-radius:25px;
+height:200px;
+width:300px;
+margin-left:500px;
+}
+#f{
+height:300px;
+width:300px;
+border-radius:25px;
+}
+#v{
+height:300px;
+width:300px;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#j{
+color:#008080;
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#s{
+height:500px;
+width:70%;
+position:relative;
+margin-top:15px;
+margin-left:200px;
+border-radius:25px;
+background: #73AD21;
+border-style: solid black;
+}
+#r{
+height:100%;
+border-radius:25px;
+border-style: solid black;
+width:100%;
+}
+#head{
+	color:#FF6600;
+}
+#one{
+	font-size:60px;
+}
+span{
+	color:red;
+}
+#stack1{	border-radius:25px;
+    background: #73AD21;
+    text-align:center;
+    height:200px;
+    width:80%;
+    color:#ffffff;
+}
+#x:hover{
+	background-color:#008080;
+	color:#ffffff;
+	text-align:center;
+}
+#q{
+color:#FF6600;
+}
+#stack1:hover{
+	width:90%;
+	height:230px;
+}
+
+  #header{
+  	height:400px;
+  	text-align:center;
+  	background-color:black;
+  	color:#ffffff;
+  }
+</style>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+</body>
+</html>
